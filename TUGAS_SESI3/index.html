@@ -115,24 +115,35 @@
                         <div class="card-body">
                             <h5 class="card-title">Proyek 1 - Landing Page</h5>
                             <p class="card-text text-muted-custom">Website Landing Page</p>
+                            <button class="btn custom-btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek1">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-md-4">
                     <div class="card project-card h-100">
                         <img src="Assets/Foto-Juan.jpeg" class="card-img-top project-img" alt="Preview proyek 2">
                         <div class="card-body">
                             <h5 class="card-title">Proyek 2 - Company Profile</h5>
                             <p class="card-text text-muted-custom">Website Company Profile</p>
+                            <button class="btn custom-btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek2">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-md-4">
                     <div class="card project-card h-100">
                         <img src="Assets/Foto-Juan.jpeg" class="card-img-top project-img" alt="Preview proyek 3">
                         <div class="card-body">
                             <h5 class="card-title">Proyek 3 - Personal Blog</h5>
                             <p class="card-text text-muted-custom">Website Personal Blog</p>
+                            <button class="btn custom-btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek3">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -143,6 +154,60 @@
     <footer class="custom-footer text-center py-4">
         <p class="mb-0">&copy; 2026 Juan Verron - Tugas Eduwork Sesi 3</p>
     </footer>
+
+    <div class="modal fade" id="modalProyek1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Proyek 1 - Landing Page</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Assets/Foto-Juan.jpeg" class="img-fluid rounded mb-3" alt="Proyek 1">
+                    <p>Website Landing Page yang dibangun menggunakan HTML dan CSS murni. Menampilkan produk dengan layout modern dan responsif.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyek2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Proyek 2 - Company Profile</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Assets/Foto-Juan.jpeg" class="img-fluid rounded mb-3" alt="Proyek 2">
+                    <p>Website Company Profile untuk menampilkan informasi perusahaan secara profesional dan menarik.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyek3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Proyek 3 - Personal Blog</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Assets/Foto-Juan.jpeg" class="img-fluid rounded mb-3" alt="Proyek 3">
+                    <p>Website Personal Blog untuk berbagi tulisan, pengalaman, dan portofolio secara online.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
