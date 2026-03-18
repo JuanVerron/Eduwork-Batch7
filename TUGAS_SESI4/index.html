@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Profile</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portofolio - Sesi 4</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Quotes</a></li>
+          <li class="nav-item">
+            <button class="btn-nav-contact" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Hubungi Saya
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Kirim Pesan 📬</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Nama kamu..." />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="email@example.com" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Subjek</label>
+            <input type="text" class="form-control" placeholder="Topik pesan..." />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesanmu di sini..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-primary-custom" onclick="alert('Pesan terkirim! ✅')">Kirim Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 fade-up">
+          <span class="hero-badge">Web Developer</span>
+          <h1 class="hero-title">Halo, Saya<br><strong>Juan Verron Anggani</strong></h1>
+          <p class="hero-subtitle mt-3">Mahasiswa yang passionate dalam membangun pengalaman web yang indah dan
+            fungsional.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <button class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Hubungi Saya
+            </button>
+            <a href="#projects" class="btn-outline-custom">Lihat Project</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center fade-up">
+          <div class="hero-img-wrapper">
+            <img src="Assets/Foto-Juan.jpeg" alt="Foto Profil" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-up">Siapa Saya?</h2>
+      <div class="divider fade-up"></div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-12 fade-up">
+          <div class="about-card">
+            <p>Halo! Saya adalah seorang <strong>web developer</strong> yang sedang menempuh perjalanan seru di dunia
+              teknologi. Saya percaya bahwa kode yang baik bukan hanya yang bekerja, tapi yang juga mudah dipahami dan
+              dirawat.</p>
+            <p class="mt-3">Saat ini saya fokus mempelajari full-stack web development — dari membangun tampilan yang
+              menarik hingga logika back-end yang solid. Setiap hari adalah kesempatan untuk belajar sesuatu yang baru.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 mb-5">
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-person-fill"></i></div>
+            <div class="detail-info"><small>Nama Lengkap</small><span>Juan Verron Anggani</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="detail-info"><small>Pendidikan</small><span>Bina Nusantara / Computer Science</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="detail-info"><small>Pekerjaan</small><span>Web Developer / Student</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="detail-info"><small>Email</small><span>verronjuan20@example.com</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-heart-fill"></i></div>
+            <div class="detail-info"><small>Hobi</small><span>Coding, Membaca, Berenang</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="detail-info"><small>Alamat</small><span>Jakarta Barat, DKI Jakarta</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-3 fade-up">
+          <div class="stat-item">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Sesi Bootcamp</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Project Selesai</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Skill Dipelajari</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Semangat Belajar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <p class="section-label fade-up">Kemampuan</p>
+      <h2 class="section-title fade-up">Tech Stack Saya</h2>
+      <div class="divider fade-up"></div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+            <h5>HTML</h5>
+            <p>Struktur & semantik halaman web yang bersih dan accessible.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+            <h5>CSS</h5>
+            <p>Styling modern dengan Flexbox, Grid, dan animasi CSS.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-bootstrap"></i></div>
+            <h5>Bootstrap</h5>
+            <p>Responsive layout cepat dengan komponen Bootstrap 5.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+            <h5>JavaScript</h5>
+            <p>Interaktivitas dan logika front-end yang dinamis.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-git"></i></div>
+            <h5>Git</h5>
+            <p>Version control untuk kolaborasi dan manajemen kode.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-database"></i></div>
+            <h5>MySQL</h5>
+            <p>Desain dan query database relasional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 fade-up">
+        <div class="col-md-6">
+          <p class="progress-label">HTML & CSS <span class="float-end">80%</span></p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width:80%"></div>
+          </div>
+          <p class="progress-label">Bootstrap <span class="float-end">70%</span></p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="progress-label">JavaScript <span class="float-end">60%</span></p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width:60%"></div>
+          </div>
+          <p class="progress-label">Git <span class="float-end">65%</span></p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width:65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-label fade-up">Portofolio</p>
+      <h2 class="section-title fade-up">Project Saya</h2>
+      <div class="divider fade-up"></div>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-filetype-html"></i></div>
+            <div class="project-body">
+              <h5>Tugas Sesi 1 — HTML Foundations</h5>
+              <p>Membuat halaman HTML dasar dengan struktur semantik yang benar.</p>
+              <div class="mb-3">
+                <span class="tag">HTML</span>
+                <span class="tag">Git</span>
+              </div>
+              <a href="../TUGAS_SESI1/index.html" target="_blank" class="btn-project">
+                <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-filetype-css"></i></div>
+            <div class="project-body">
+              <h5>Tugas Sesi 2 — Mastering CSS</h5>
+              <p>Menambahkan styling CSS pada halaman web dengan layout modern.</p>
+              <div class="mb-3">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a href="../TUGAS_SESI2/index.html" target="_blank" class="btn-project">
+                <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-bootstrap"></i></div>
+            <div class="project-body">
+              <h5>Tugas Sesi 3 — Bootstrap</h5>
+              <p>Menjadikan halaman web responsif dengan Bootstrap 5.</p>
+              <div class="mb-3">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <a href="../TUGAS_SESI3/index.html" target="_blank" class="btn-project">
+                <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <p class="section-label fade-up text-center">Inspirasi</p>
+      <h2 class="section-title fade-up text-center">Kata-Kata yang Memotivasi Saya</h2>
+      <div class="divider fade-up mx-auto"></div>
+
+      <div id="quoteCarousel" class="carousel slide fade-up" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-slide">
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <p class="quote-text">"The only way to do great work is to love what you do. If you haven't found it yet,
+                keep looking. Don't settle."</p>
+              <p class="quote-author">Steve Jobs</p>
+              <p class="quote-role">Co-founder, Apple Inc.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-slide">
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <p class="quote-text">"It's not that I'm so smart, it's just that I stay with problems longer."</p>
+              <p class="quote-author">Albert Einstein</p>
+              <p class="quote-role">Physicist & Nobel Laureate</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-slide">
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <p class="quote-text">"First, solve the problem. Then, write the code."</p>
+              <p class="quote-author">John Johnson</p>
+              <p class="quote-role">Software Engineer</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-slide">
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <p class="quote-text">"The expert in anything was once a beginner. Keep learning, keep growing."</p>
+              <p class="quote-author">Helen Hayes</p>
+              <p class="quote-role">Actress & Inspirator</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <p class="section-label fade-up">Kontak</p>
+      <h2 class="section-title fade-up">Temukan Saya Di</h2>
+      <div class="divider fade-up"></div>
+      <div class="row g-4 align-items-center fade-up">
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <a href="mailto:verronjuan20@example.com" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div class="contact-info"><small>Email</small><span>verronjuan20@example.com</span></div>
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-github"></i></div>
+              <div class="contact-info"><small>GitHub</small><span>github.com/JuanVerron</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div style="padding: 2rem;">
+            <i class="bi bi-chat-heart-fill" style="font-size:4rem; color:var(--brown); opacity:0.4;"></i>
+            <h3 class="mt-3" style="color:var(--brown2);">Ada yang ingin ditanyakan?</h3>
+            <p class="mt-2" style="color:var(--brown); font-weight:300;">Jangan ragu untuk menghubungi saya. Saya senang
+              berdiskusi!</p>
+            <button class="btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+              <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Juan Verron - Bootcamp Eduwork</strong></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+</html>
